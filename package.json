@@ -1,0 +1,27 @@
+{
+  "name": "react-native-cameraIOS",
+  "version": "0.0.3",
+  "description": "A camera for react native IOS",
+  "main": "cameraIOS.ios.js",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "record",
+    "camera",
+    "video",
+    "capture"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/darkrishabh/react-native-cameraIOS.git"
+  },
+  "author": {
+    "name": "Rishabh Mehan",
+    "email": "me@rishabhmehan.com",
+    "url": "https://github.com/darkrishabh"
+  },
+  "devDependencies": {
+    "react-native": ">=0.5.0"
+  }
+}
