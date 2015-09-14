@@ -296,14 +296,15 @@
    
    [[NSNotificationCenter defaultCenter] removeObserver:self
                                                    name:MPMoviePlayerPlaybackDidFinishNotification object:player];
+   NSNumber *reason = [notification.userInfo objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
    
-   if ([player respondsToSelector:@selector(setFullscreen:animated:)])
-   {
+   if ([reason intValue] == MPMovieFinishReasonUserExited) {
+      
       [player.view removeFromSuperview];
       
    }
-}
 
+}
 
 #pragma mark - SCRecorder events
 
